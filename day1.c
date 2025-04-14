@@ -20,9 +20,13 @@ int main() {
     
     switch (choice){
         case'+':printf("\n Sum of two numbers %d+ %d = %d ",a,b,a+b);
+            break;
         case '-':printf("\n Subsctraction of two numbers %d - %d = %d ",a,b,a-b);
+            break;
         case '*':printf("\n Mult of two numbers %d * %d = %d ",a,b,a*b);
+            break;
         case '/':printf("\n Division of two numbers %d / %d = %d ",a,b,a/b);
+            break;
         
     }
 

@@ -9,7 +9,9 @@ int main() {
     printf("1  Print a square of stars \n");
     printf("2. Print a Right-angled triangle pattern \n");
     printf("3. Print a Inverted triangle pattern \n");
-    printf("4. Print a Pyramid pattern \n");
+    printf("4. Print a Left half -Pyramid Pattern \n");
+    printf("5. Print a Left half -Pyramid Pattern \n");
+    printf("6. Print a Inverted Left half -Pyramid Pattern \n");
 
     printf("Enter your choice  \n");
     choice=getchar();
@@ -57,21 +59,56 @@ int main() {
         break;        
 
         case '4': 
-        //2. Right-angled triangle pattern
-        printf("Enter size of height of pyramid of stars \n");
+        //4. Pyramid Pattern
+        printf("Enter odd number as size of height of pyramid of stars \n");
         scanf("%d",&len);
         printf("size of square of stars %d\n",len);
-        for(int i=0;i<len;i++){  //For rows
-            for(int j=0;j<len-i;j++){ //Fr columns
-                if(j==len/2)
-                  printf("* ");
+        for(int i=len-1;i>=0;i--){  //For rows
+            for(int j=0 ;j<len;j++){ //Fr columns
+                if(j=(i/2))
+                  printf("*");
+                else
+                  printf(" ");
+
             }
             printf("\n");
         }
         break;  
-    }
-
-    
  
+
+        case '5': 
+        //5. Left half -Pyramid Pattern
+        printf("Enter size of lenth of pyramid of stars \n");
+        scanf("%d",&len);
+        printf("size of square of stars %d\n",len);
+        for(int i=len-1;i>=0;i--){  //For rows
+            for(int j=0;j<len;j++){ //Fr columns
+                if(j>=i )
+                    printf("*");
+                else
+                    printf(" ");
+
+            }
+            printf("\n");
+        }
+        break;  
+
+        case '6': 
+        //Print a Inverted Left half -Pyramid Pattern
+        printf("Enter size of lenth of pyramid of stars \n");
+        scanf("%d",&len);
+        printf("size of square of stars %d\n",len);
+        for(int i=0;i<len;i++){  //For rows
+            for(int j=0;j<len;j++){ //Fr columns
+                if(j>=i )
+                    printf("*");
+                else
+                    printf(" ");
+
+            }
+            printf("\n");
+        }
+        break;      
+    }
     return 0;
 }

@@ -1,8 +1,8 @@
 # 100daysofc
-# This is my attempt to write few codes each day
-# Will upload written code here as days progresses
+This is my attempt to write few codes each day
+Will upload written code here as days progresses
 
-# I will try to execute program, which will cover the following. Will add more topics as porgressed.
+I will try to execute program, which will cover the following. Will add more topics as porgressed.
 
 All Examples
 Introduction
